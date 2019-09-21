@@ -5,13 +5,15 @@
   Time: 19:23
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8" %>
+<jsp:forward page="/emps"></jsp:forward>
+
+<%--<html>
 <head>
     <title>ssm-crud</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <%--引入JQuery--%>
+    &lt;%&ndash;引入JQuery&ndash;%&gt;
     <script src="static/js/jquery-1.11.0.min.js"></script>
     <link href="static/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
@@ -28,4 +30,4 @@
 <body>
     <button class="btn btn-success">按钮</button>
 </body>
-</html>
+</html>--%>
