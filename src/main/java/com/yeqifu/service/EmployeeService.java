@@ -69,4 +69,14 @@ public class EmployeeService {
     public void deleteEmp(Integer id) {
         employeeMapper.deleteByPrimaryKey(id);
     }
+
+
+    public void deleteBatch(List<Integer> ids) {
+        EmployeeExample example = new EmployeeExample();
+        Criteria criteria = example.createCriteria();
+        //delete form  xxx where emp_id in(1,2,3)
+        criteria.andEmpIdIn(ids);
+        employeeMapper.deleteByExample(example);
+
+    }
 }
